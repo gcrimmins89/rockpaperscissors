@@ -6,6 +6,14 @@ const p1heading = document.getElementById('p1')
 const p2heading = document.getElementById('p2')
 const win = document.getElementById('winner')
 
+function getNames(){
+    player1Name = prompt('What is player 1 name?')
+    player2Name = prompt('What is player 2 name')
+    p1.textContent = player1Name
+    p2.textContent = player2Name
+}
+
+getNames()
 
 function game(){
     player1 = Math.floor(Math.random() * 3)
