@@ -33,15 +33,15 @@ function game(){
             player2tag.textContent = 'Scissors'
         }
         if(player1tag.textContent === "Rock" && player2tag.textContent === "Scissors"){
-            win.textContent = "Player 1 Wins"
+            win.textContent = `${player1Name} wins`
         } else if(player1tag.textContent === player2tag.textContent){
-            win.textContent = "Draw"
+            win.textContent = "The game is a draw"
         } else if(player1tag.textContent === "Paper" && player2tag.textContent === "Rock"){
-            win.textContent = "Player 1 Wins"
+            win.textContent = `${player1Name} wins`
         }
             else if(player1tag.textContent === "Scissors" && player2tag.textContent === "Paper"){
-                win.textContent = "Player 1 Wins"
+                win.textContent = `${player1Name} wins`
             } else {
-                win.textContent = "Player 2 Wins"
+                win.textContent = `${player2Name} wins`
             }
         }
